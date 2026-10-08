@@ -1,0 +1,35 @@
+# Midterm - Implement ls(1)
+
+This project implements the subset of NetBSD ls(1) specified by the
+midterm manual page.
+
+## Build
+    make
+
+## Usage
+    ./ls [ -AacdFfhiklnqRrSstuw ] [file ...]
+
+## Main tests
+    ./ls
+    ./ls -a
+    ./ls -A
+    ./ls -l
+    ./ls -n
+    ./ls -i
+    ./ls -F
+    ./ls -R
+    ./ls -r
+    ./ls -S
+    ./ls -t
+    ./ls -s
+    ./ls -h -l
+    ./ls -d .
+    ./ls -f
+    ./ls -w
+
+## Testing notes
+The output was compared manually with the behavior described in the
+provided ls(1) manual. Tests include regular files, hidden files,
+directories, executable files, symbolic links, sorting, recursive
+listing, long format, inode numbers, block counts and human-readable
+sizes.
